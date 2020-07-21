@@ -136,7 +136,7 @@ export default class Layout extends Component {
       <>
         <GlobalStyle />
         <a
-          href="https://github.com/GuilleHM/videohead"
+          href="https://github.com/GuilleHM/vh"
           target="_blank"
           rel="noopener noreferrer"
           className="github-corner"
