@@ -328,7 +328,8 @@ const IndexPage = ({ data: { favMovies, watchedMovies } }) => {
 
   // Constants for movie display at search section
   const { filteredMovies, query, listedMovies, randomMovies } = state
-  const hasSearchResults = filteredMovies.length === 1 && query.toLowerCase() === filteredMovies[0].title.toLowerCase()
+  const hasSearchResults =
+    filteredMovies.length === 1 && query.toLowerCase().trim() === filteredMovies[0].title.toLowerCase()
   const MoviesToRender = hasSearchResults ? filteredMovies : []
 
   return (
